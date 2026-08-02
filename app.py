@@ -28,9 +28,9 @@ def train_model():
 model = train_model()
 
 # --- User Inputs ---
-exp = st.number_input("Years of Experience", min_value=0.0, max_value=50.0, value=1.0, step=0.1)
-written = st.number_input("Written Test Score (0-10)", min_value=0.0, max_value=10.0, value=5.0, step=1.0)
-interview = st.number_input("Interview Score (0-10)", min_value=0.0, max_value=10.0, value=5.0, step=1.0)
+exp = st.number_input("Years of Experience", min_value=0.0, max_value=50.0, value=0, step=0.1)
+written = st.number_input("Written Test Score (0-10)", min_value=0, max_value=10, value=0, step=1)
+interview = st.number_input("Interview Score (0-10)", min_value=0, max_value=10, value=0, step=1)
 
 # --- Prediction Action ---
 if st.button("Calculate Salary", type="primary"):
